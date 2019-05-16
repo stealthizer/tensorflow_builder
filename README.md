@@ -14,7 +14,7 @@ And then you [search](https://stackoverflow.com/questions/50995707/ignoring-visi
 
 To run the image (use the one available)
 ```
-$ docker run --init -v $(pwd)/output:/tensorflow/pip/tensorflow_pkg tensorflow-builder:latest
+$ docker run --init -v $(pwd)/output:/tensorflow/pip/tensorflow_pkg stealthizer/tensorflow-builder:latest
 ```
 
 And after several hours of compilation (im my case) a new python wheel file will be available for you in the ./output folder, ready to be used.
